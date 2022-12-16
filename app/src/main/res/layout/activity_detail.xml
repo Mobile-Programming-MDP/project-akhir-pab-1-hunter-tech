@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:padding="6dp"/>
+
+        <TextView
+            android:id="@+id/tv_tentang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:justificationMode="inter_word"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_image"
+            android:text="Name : "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_image"
+            android:layout_below="@id/name"
+            android:text="Species :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_image"
+            android:layout_below="@id/species"
+            android:layout_marginLeft="16dp"
+            android:text="Status :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_image"
+            android:layout_below="@+id/status"
+            android:layout_marginLeft="16dp"
+            android:text="Gender : "
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/name"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:id="@+id/tv_species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/species"
+            android:layout_below="@id/tv_name"
+            android:text="Human"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alive"
+            android:layout_toRightOf="@id/status"
+            android:layout_below="@id/tv_species"
+            android:textSize="18sp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_toRightOf="@id/gender"
+            android:layout_below="@id/tv_status"
+            android:layout_marginLeft="2dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tentang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_image"
+            android:layout_marginStart="2dp"
+            android:text="tentang"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
