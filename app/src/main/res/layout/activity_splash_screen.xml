@@ -4,9 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg1"
     tools:context=".Activity.SplashScreenActivity"
     >
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="330dp"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/rick" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,13 +21,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="91dp"
-
-        android:layout_marginBottom="618dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="147dp"
         android:text="Rick &amp; Morty"
         android:textColor="@color/Aqua"
         android:textSize="40sp"
-        android:textStyle="italic"
-        />
+        android:textStyle="italic" />
 
 </RelativeLayout>

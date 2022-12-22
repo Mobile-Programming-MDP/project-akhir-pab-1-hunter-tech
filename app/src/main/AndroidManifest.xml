@@ -7,9 +7,8 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
         android:label="Rick And Morty"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/rick"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectAkhirPab"
         tools:targetApi="31">
