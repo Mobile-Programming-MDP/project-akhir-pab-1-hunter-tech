@@ -13,97 +13,139 @@
         android:orientation="vertical"
         android:padding="6dp">
 
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD7D7"
+            android:backgroundTint="#FFD7D7"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:layout_toRightOf="@+id/iv_image">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/name"
+                android:text="Name"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Name : "
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_species"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD7D7"
+            android:backgroundTint="#FFD7D7"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:layout_toRightOf="@+id/iv_image"
+            android:layout_below="@+id/rl_name">
+
+            <TextView
+                android:id="@+id/species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Species :"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/species"
+                android:text="Human"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD7D7"
+            android:backgroundTint="#FFD7D7"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:layout_toRightOf="@+id/iv_image"
+            android:layout_below="@+id/rl_species">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Status :"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/status"
+                android:text="Alive"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD7D7"
+            android:backgroundTint="#FFD7D7"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:layout_toRightOf="@+id/iv_image"
+            android:layout_below="@+id/rl_status">
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Gender : "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/gender"
+                android:text="Male"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
         <ImageView
             android:id="@+id/iv_image"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:background="@drawable/ic_launcher_background" />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@id/iv_image"
-            android:text="Name : "
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/species"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/name"
-            android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@id/iv_image"
-            android:text="Species :"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/species"
-            android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@id/iv_image"
-            android:text="Status :"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/status"
-            android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@id/iv_image"
-            android:text="Gender : "
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@id/name"
-            android:text="Name"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_species"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@id/species"
-            android:text="Human"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_species"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@id/status"
-            android:text="Alive"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_status"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@id/gender"
-            android:text="Male"
-            android:textSize="18sp"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_tentang"
